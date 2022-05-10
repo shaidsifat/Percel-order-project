@@ -1,0 +1,33 @@
+
+<h1>New page</h1>
+ 
+{% block body_block %}
+
+          
+<table>
+    <tbody>
+        {% for i in data %}  
+            {% if forloop.counter == 3 %}
+                <tr>  
+                    
+                    <td>{{ i.product_weight}}</td>  
+                    
+                
+                </tr>  
+            {% endif %}
+        {% endfor %}  
+    </tbody>
+</table>  
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
